@@ -1,9 +1,9 @@
-### How do Generics allow you to build reusable components and functions that stay strictly typed regardless of the data structures passed in?
+# How do Generics allow you to build reusable components and functions that stay strictly typed regardless of the data structures passed in?
 - In we use type specific. The code becomes repetitive.
 - Generic make the logic dynamic and reusable.
 - Suppose if we want a function that returns the first item of an array.
 
-# Example:
+### Example:
 
 ```bash
 # For string
@@ -22,7 +22,7 @@ function firstNumber(arr: number[]): number {
 
 - We can you "any" to use a single logic for both case. But the problem is "any" will accept incorrect approach & type safe will be gone.
 
-# Example:
+### Example:
 ```bash
 function first(arr: any[]): any {
   return arr[0];
@@ -34,7 +34,7 @@ value.toUpperCase();
 
 ## Generic solution
 
-# Example:
+### Example:
 ```bash
 function first<T>(arr: T[]): T {
   return arr[0];

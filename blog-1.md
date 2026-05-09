@@ -1,7 +1,7 @@
-###  Why is "any" labeled "type safety hole" for handling unpredictable data
+#  Why is "any" labeled "type safety hole" for handling unpredictable data
 - If we use "any" on a value TypeScript looses the ability to fact check whether the expected value type matches the provided value type.
 
-# Example:
+## Example:
 ```bash
 let a: any = "Hello";
 let b: number = a;
@@ -9,10 +9,10 @@ let b: number = a;
 - Here type string cannot be assigned to type number.
 
 
-### Why is "unknown" the safer choice for handling unpredictable data
+# Why is "unknown" the safer choice for handling unpredictable data
 - Unlike "any", "unknown" forces to narrow down the type.
 
-# Example:
+## Example:
 ```bash
 let value: unknown;
 
@@ -21,10 +21,10 @@ if(typeof value === "string"){
     }
 ```
 
-### Explain the concept of type narrowing.
+# Explain the concept of type narrowing.
 - If we don't know the type of a value. To prevent errors, we have to narrow down the type that value holds.
 
-# Example
+## Example
 ```bash
 let value: unknown;
 
